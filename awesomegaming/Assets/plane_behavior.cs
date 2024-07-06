@@ -15,7 +15,7 @@ public class plane_behavior : MonoBehaviour {
     }
 
     void OnCollisionEnter(Collision col) {
-        print("Plane Collided");
+        print("Plane Collided!!!");
         
         Vector3 direction = col.contacts[0].point - transform.position;
         direction = -direction.normalized;
